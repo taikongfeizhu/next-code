@@ -1,0 +1,58 @@
+[
+  {
+    "page_name": "Login Page",
+    "page_path": "/pages/login",
+    "priority": "high",
+    "page_description": "Handles user authentication for both employees and administrators. Features include employee ID and password input, validation, and role-based redirection.",
+    "related_apis": [
+      "/api/auth/login"
+    ],
+    "is_done": true,
+    "is_reviewed": true,
+    "task_name": "",
+    "generating_summary": "",
+    "reviewing_summary": ""
+  },
+  {
+    "page_name": "Application Page",
+    "page_path": "/pages/application",
+    "priority": "high",
+    "page_description": "Allows employees to submit gift box applications. Features include box type selection, delivery method selection, and address input for online delivery.",
+    "related_apis": [
+      "/api/applications"
+    ],
+    "is_done": true,
+    "is_reviewed": true,
+    "task_name": "",
+    "generating_summary": "",
+    "reviewing_summary": ""
+  },
+  {
+    "page_name": "Status Page",
+    "page_path": "/pages/status",
+    "priority": "medium",
+    "page_description": "Displays application status and tracking information for employees. Shows different information based on delivery type.",
+    "related_apis": [
+      "/api/applications/status"
+    ],
+    "is_done": true,
+    "is_reviewed": true,
+    "task_name": "",
+    "generating_summary": "",
+    "reviewing_summary": ""
+  },
+  {
+    "page_name": "Admin Dashboard",
+    "page_path": "/pages/admin/dashboard",
+    "priority": "medium",
+    "page_description": "Administrative interface for managing gift box applications. Features include viewing all applications and updating tracking information.",
+    "related_apis": [
+      "/api/admin/applications"
+    ],
+    "is_done": true,
+    "is_reviewed": true,
+    "task_name": "",
+    "generating_summary": "",
+    "reviewing_summary": ""
+  }
+]
