@@ -12,6 +12,23 @@ async function openDb() {
   });
 }
 
+export async function GET(request: Request) {
+  try {
+    const db = await openDb();
+    const users = await db.all('SELECT * FROM users');
+    await db.close();
+
+    return Response.json({
+      code: 200,
+      msg: 'Users retrieved successfully',
+      data: users
+    });
+  } catch (error) {
+    console.error('Error retrieving users:', error);
+    return Response.json({ code: 500, msg: 'Internal server error' }, { status:500 });
+  }
+}
+
 export async function POST(request: Request) {
   try {
     const { employee_id, password } = await request.json();
